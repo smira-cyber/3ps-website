@@ -104,6 +104,20 @@ The live site is Base44, so three options:
 3. **Host the static files directly** (Netlify/Cloudflare Pages/S3) and point
    3ps.llc's DNS at it — this folder is deployable as-is once interior pages exist.
 
+## Also in the repo
+
+- **Official logo files** rescued from Base44 storage before it goes away:
+  `assets/brand/3PSLogo-WhiteHorizontalRGB.png` (for dark backgrounds) and
+  `assets/brand/3PSLogo-ColorVerticalRGB.png`. The site currently uses a
+  typographic mark that matches the paper/ink design; the blue official logo is
+  preserved here and can be swapped into the header (one block in
+  `assets/report.js`, the `MARK` constant) if brand consistency wins.
+- **Google Analytics** — the existing tag (`G-JB173JK0G0`) is wired into every
+  page for continuity with the current site.
+- **Redirect stubs** for the 10 old service URLs (`/managed-it`, `/cloud`, …) —
+  noindex meta-refresh pages pointing at the matching `services.html` anchor, so
+  inbound links and search results survive the cutover.
+
 ## ⚠️ Verify before publishing
 
 - **Claims & footnotes.** The stats (99.9%, <15 min, 0 ransomware, 57%) are carried
