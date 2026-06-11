@@ -1,4 +1,32 @@
-# 3PS.llc — "The Operations Report" redesign concept
+# 3PS.llc — "The Operations Report" redesign
+
+**Live preview:** https://smira-cyber.github.io/3ps-website/
+**Repo:** https://github.com/smira-cyber/3ps-website (Pages serves `main`)
+
+A complete static replacement for the Base44-hosted 3ps.llc — 13 pages, no build
+step. Push to `main` and GitHub Pages redeploys automatically.
+
+## Cutting over 3ps.llc (when ready — this changes production)
+
+DNS for 3ps.llc is on Cloudflare. Two options:
+
+**Option A — keep GitHub Pages (simplest):**
+1. In the repo: Settings → Pages → Custom domain → `3ps.llc` (this adds the CNAME).
+2. In Cloudflare DNS: replace the current A/CNAME for `3ps.llc` with
+   `CNAME @ → smira-cyber.github.io` (flattened automatically) and
+   `CNAME www → smira-cyber.github.io`; set to DNS-only or Proxied (either works;
+   if Proxied, set SSL mode "Full").
+3. Wait for the Pages certificate, then enforce HTTPS in repo settings.
+
+**Option B — Cloudflare Pages (same repo):**
+1. Cloudflare dashboard → Workers & Pages → Create → connect `3ps-website` repo
+   (no build command, output dir `/`).
+2. Add `3ps.llc` as the custom domain — DNS is already in the same account.
+
+After cutover, the Base44 app can be retired/canceled. Until then, the live site
+is untouched.
+
+## Original concept notes
 
 A redesigned homepage for **3ps.llc**, built to stand out from the generic AI-template
 MSP aesthetic. Static HTML/CSS/JS, no build step.
