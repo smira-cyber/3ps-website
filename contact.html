@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — 3PS | Start a Baseline Assessment</title>
+  <meta name="description" content="Talk to 3PS about managed IT, lab systems integration, security, or 3PS Lock. Call (855) 950-5200, email info@3ps.llc, or send the form — response within one business day." />
+  <link rel="canonical" href="https://3ps.llc/contact" />
+  <meta name="theme-color" content="#F6F4EE" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='1.5' y='1.5' width='37' height='37' fill='%23F6F4EE' stroke='%231B1D22' stroke-width='3'/%3E%3Cg fill='%2317613B'%3E%3Crect x='9' y='21' width='5' height='10'/%3E%3Crect x='17' y='16' width='5' height='15'/%3E%3Crect x='25' y='10' width='5' height='21'/%3E%3C/g%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/report.css" />
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main id="main">
+
+    <section class="page-hero" style="padding-bottom:0;">
+      <div class="wrap">
+        <p class="kicker bare">Contact</p>
+        <h1>Start the <em>conversation.</em></h1>
+        <p class="lede">Tell us what's keeping IT interesting — we'll reply within one business day with a straight answer, not a sales sequence.</p>
+      </div>
+    </section>
+
+    <section style="border-top:0;">
+      <div class="wrap">
+        <div class="report-grid" style="grid-template-columns:1.1fr 0.9fr;align-items:start;">
+          <div class="reveal">
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="f-name">Your name *</label>
+                  <input id="f-name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="f-company">Company *</label>
+                  <input id="f-company" name="company" type="text" autocomplete="organization" required />
+                </div>
+                <div class="field">
+                  <label for="f-email">Work email *</label>
+                  <input id="f-email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="f-phone">Phone</label>
+                  <input id="f-phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+                <div class="field full">
+                  <label for="f-topic">What do you need?</label>
+                  <select id="f-topic" name="topic">
+                    <option>Baseline Assessment</option>
+                    <option>3PS Lock</option>
+                    <option>Managed IT / ongoing operations</option>
+                    <option>Lab systems &amp; integration</option>
+                    <option>Security incident — urgent</option>
+                    <option>Something else</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="f-message">The situation *</label>
+                  <textarea id="f-message" name="message" required placeholder="Environment, pain points, timelines — whatever you have."></textarea>
+                </div>
+                <div class="field hp" aria-hidden="true">
+                  <label for="f-hp">Leave this blank</label>
+                  <input id="f-hp" name="company_site" type="text" tabindex="-1" autocomplete="off" />
+                </div>
+              </div>
+              <div style="margin-top:20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;">
+                <button class="btn btn-primary btn-lg" type="submit">Send request
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+                <span id="form-status" role="status" aria-live="polite"></span>
+              </div>
+            </form>
+          </div>
+
+          <div class="reveal" data-d="1">
+            <div class="report">
+              <div class="report-head"><span class="title">Direct lines</span><span class="stamp">PREFERRED</span></div>
+              <div class="report-rows">
+                <div class="report-row"><span class="k">Call</span><span class="v ok"><a href="tel:+18559505200" style="color:inherit;text-decoration:none;">(855) 950-5200</a> <span class="dot" aria-hidden="true"></span></span></div>
+                <div class="report-row"><span class="k">Email</span><span class="v ok"><a href="mailto:info@3ps.llc" style="color:inherit;text-decoration:none;">INFO@3PS.LLC</a> <span class="dot" aria-hidden="true"></span></span></div>
+                <div class="report-row"><span class="k">Response time</span><span class="v ok">&lt; 1 BUSINESS DAY <span class="dot" aria-hidden="true"></span></span></div>
+                <div class="report-row"><span class="k">Active incident?</span><span class="v ok">CALL — 24/7 <span class="dot" aria-hidden="true"></span></span></div>
+              </div>
+              <div class="report-foot"><span>Serving businesses nationwide</span></div>
+            </div>
+            <p style="font-family:var(--mono);font-size:0.74rem;color:var(--mute);margin-top:16px;line-height:1.7;">If you're mid-incident — ransomware, outage, suspected breach — skip the form and call. A human answers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/report.js" defer></script>
+</body>
+</html>
