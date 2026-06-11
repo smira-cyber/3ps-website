@@ -58,7 +58,7 @@
           '<div class="foot-brand">' +
             '<a class="brand" href="index.html" aria-label="3PS home">' + MARK +
               '<span><span class="word">3PS</span><span class="ppp">People · Process · Performance</span></span></a>' +
-            '<p>The managed IT and security partner for diagnostic laboratories and regulated operations nationwide.</p>' +
+            '<p>The managed IT and security partner for regulated industries and growing businesses nationwide.</p>' +
           '</div>' +
           '<div class="foot-col"><div class="h">Services</div>' +
             '<a href="services.html">All services</a>' +
